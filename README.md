@@ -1,6 +1,6 @@
-# dlwh.org
+# dlwh.github.io
 
-Source for [dlwh.org](https://dlwh.org), David Hall's personal website.
+Source for [dlwh.github.io](https://dlwh.github.io), David Hall's personal website.
 
 Built with Jekyll and served by GitHub Pages. Main content lives in `index.md`;
 custom styles are intentionally minimal (`assets/css/style.scss`).
