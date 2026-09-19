@@ -8,10 +8,15 @@ lang: en-US
 
 theme: jekyll-theme-minimal
 
-# Keep the generated site tiny and predictable.
+# Ensure the CNAME file is carried into the built site.
 include:
   - CNAME
 
-# github-pages gem pins these; the theme provides the default layout we override.
-plugins:
-  - jekyll-seo-tag
+# Exclude vendored gems from the build.
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .bundle
+  - .gitignore
