@@ -1,0 +1,17 @@
+# Site settings
+title: David Hall
+description: >-
+  David Hall builds foundation models and large-scale AI systems. He leads Marin
+  at Open Athena and co-created Marin and Levanter at Stanford CRFM.
+url: "https://dlwh.org"
+lang: en-US
+
+theme: jekyll-theme-minimal
+
+# Keep the generated site tiny and predictable.
+include:
+  - CNAME
+
+# github-pages gem pins these; the theme provides the default layout we override.
+plugins:
+  - jekyll-seo-tag

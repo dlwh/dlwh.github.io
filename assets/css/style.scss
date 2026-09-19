@@ -1,0 +1,205 @@
+---
+# Front matter required so Jekyll processes this file through Sass.
+---
+
+/* Colors — drawn from the Marin homepage's warm-paper palette. */
+:root {
+  --bg: #eee8dd;
+  --text: #212b33;
+  --text-secondary: #3a4a57;
+  --link: #2a6496;
+  --rule: #d8d1c3;
+  --focus: #c45a3c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a2028;
+    --text: #e8e0d0;
+    --text-secondary: #b8b0a0;
+    --link: #8cc0eb;
+    --rule: #39424d;
+    --focus: #d4795e;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+/* Layout — narrow readable column with generous breathing room. */
+.page-container {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 6rem 1.25rem 4rem;
+}
+
+@media (min-width: 48em) {
+  .page-container {
+    padding: 6rem 1.5rem 4rem;
+  }
+}
+
+/* Links — ordinary text links, quiet underline treatment. */
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  overflow-wrap: break-word;
+}
+
+a:hover {
+  text-decoration-thickness: 1.5px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Masthead — name, one-liner, layout of the headshot. */
+.masthead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.tagline {
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.profile-links {
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.headshot {
+  width: 144px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 6px;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 26em) {
+  .masthead {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .headshot {
+    width: 112px;
+  }
+}
+
+/* Main content sections. */
+main h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+main h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+main ul {
+  padding-left: 1.4rem;
+}
+
+main li {
+  margin-bottom: 0.5rem;
+}
+
+/* Project entries */
+.work-entry {
+  margin-bottom: 2rem;
+}
+
+.work-entry p.meta {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.work-entry p.meta a {
+  color: var(--text-secondary);
+}
+
+.work-entry p.meta a:hover,
+.work-entry p.meta a:focus {
+  color: var(--link);
+}
+
+/* Writing entries */
+.writing-entry {
+  margin-bottom: 1.25rem;
+}
+
+.writing-entry p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.writing-entry .entry-line {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 4rem;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.7;
+}

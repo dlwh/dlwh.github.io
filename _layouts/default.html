@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="canonical" href="https://dlwh.org/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.title | escape }}">
+    <meta property="og:description" content="{{ site.description | escape }}">
+    <meta property="og:url" content="https://dlwh.org/">
+    <meta property="og:image" content="https://dlwh.org/assets/images/headshot.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.title | escape }}">
+    <meta name="twitter:description" content="{{ site.description | escape }}">
+
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "David Hall",
+      "alternateName": ["dlwh", "dlwhall"],
+      "url": "https://dlwh.org/",
+      "image": "https://dlwh.org/assets/images/headshot.jpg",
+      "jobTitle": "Head of Marin",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Open Athena",
+        "url": "https://openathena.ai/"
+      },
+      "alumniOf": [
+        { "@type": "Organization", "name": "UC Berkeley" },
+        { "@type": "Organization", "name": "Stanford CRFM" }
+      ],
+      "knowsAbout": ["foundation models", "machine learning", "natural language processing"],
+      "sameAs": [
+        "https://github.com/dlwh",
+        "https://x.com/dlwh",
+        "https://www.linkedin.com/in/dlwhall",
+        "https://scholar.google.com/citations?user=6GpZV0YAAAAJ&hl=en"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="masthead">
+        <div class="masthead-copy">
+          <h1 class="name">David Hall</h1>
+          <p class="tagline">I build foundation models and the systems needed to train them.</p>
+          <p class="profile-links">
+            <a rel="me" href="https://github.com/dlwh">GitHub</a> ·
+            <a rel="me" href="https://scholar.google.com/citations?user=6GpZV0YAAAAJ&amp;hl=en">Scholar</a> ·
+            <a rel="me" href="https://x.com/dlwh">X</a> ·
+            <a rel="me" href="https://www.linkedin.com/in/dlwhall">LinkedIn</a>
+          </p>
+        </div>
+        <img class="headshot" src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="David Hall" width="288" height="288">
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <p>Berkeley, California</p>
+      </footer>
+    </div>
+  </body>
+</html>
