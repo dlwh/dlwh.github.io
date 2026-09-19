@@ -2,7 +2,7 @@
 layout: default
 ---
 
-I lead [Marin](https://marin.community), an open lab for building foundation models, at [Open Athena](https://openathena.ai). Marin began at [Stanford CRFM](https://crfm.stanford.edu/) in 2024, where Percy Liang and I created the project. We develop models in the open: code, data, experiments, training runs, failures, and results.
+I lead [Marin](https://marin.community), an [open lab](https://marin.community/blog/2025/05/19/announcement/) for building foundation models, at [Open Athena](https://openathena.ai). [Percy Liang](https://cs.stanford.edu/~pliang/) and I started Marin at [Stanford CRFM](https://crfm.stanford.edu/) in 2024. We develop models in the open: code, data, experiments, training runs, failures, and results.
 
 I also created [Levanter](https://github.com/marin-community/marin/tree/main/lib/levanter), a JAX framework for large-scale model training. Before returning to research, I co-founded [Semantic Machines](https://www.microsoft.com/en-us/research/group/semantic-machines/), a conversational AI startup acquired by Microsoft. Earlier, I did my PhD at UC Berkeley and built [Breeze](https://github.com/scalanlp/breeze), a numerical computing library for Scala that became part of the foundation of Apache Spark's MLlib.
 
@@ -14,8 +14,7 @@ I also created [Levanter](https://github.com/marin-community/marin/tree/main/lib
 </div>
 
 <div class="work-entry">
-  <p><a href="https://github.com/marin-community/marin/tree/main/lib/levanter">Levanter</a> — A legible, scalable JAX framework for training large language models and other foundation models on GPUs and TPUs. Levanter is now developed inside the Marin monorepo; the <a href="https://github.com/marin-community/levanter">original repository</a> still has useful historical documentation.</p>
-  <p class="meta">Built on <a href="https://github.com/marin-community/haliax">Haliax</a>, named tensors for JAX that make large distributed models easier to read and modify.</p>
+  <p><a href="https://github.com/marin-community/marin/tree/main/lib/levanter">Levanter</a> — A legible, scalable JAX framework for training large language models and other foundation models on GPUs and TPUs. Levanter is now developed inside the Marin monorepo; the <a href="https://github.com/marin-community/levanter">original repository</a> still has useful historical documentation. Levanter is built on <a href="https://github.com/marin-community/haliax">Haliax</a>, the named-tensor library I designed for JAX, which makes large distributed models easier to read and modify.</p>
 </div>
 
 <div class="work-entry">
@@ -25,33 +24,67 @@ I also created [Levanter](https://github.com/marin-community/marin/tree/main/lib
 ## Selected writing
 
 <div class="writing-entry">
-  <p><a href="https://openathena.ai/blog/marin-535b-launch-note/">Marin 535B-A23B launch note</a></p>
+  <p><a href="https://openathena.ai/blog/marin-535b-launch-note/">Launching Marin 535B-A23B</a></p>
+  <p class="entry-desc">Thoughts on Marin's first year at Open Athena, chikungunya, and launching Marin's largest open training run yet.</p>
+  <p class="entry-line">Open Athena · 2026</p>
+</div>
+
+<div class="writing-entry">
+  <p><a href="https://openathena.ai/blog/open-development-of-frontier-ai/">Open Development of Frontier AI</a></p>
+  <p class="entry-desc">Why the process of building frontier AI should be public, not just the models we release.</p>
   <p class="entry-line">Open Athena · 2026</p>
 </div>
 
 <div class="writing-entry">
   <p><a href="https://marin.community/blog/2025/05/19/announcement/">Introducing Marin: An Open Lab for Building Foundation Models</a></p>
-  <p class="entry-line">Marin · 2025</p>
+  <p class="entry-desc">What Marin is, why we built it, and how the open-lab model works. Things have gotten messier in the age of agents, but the commitment stands.</p>
+  <p class="entry-line">Stanford CRFM · 2025</p>
 </div>
 
 <div class="writing-entry">
   <p><a href="https://marin.readthedocs.io/en/latest/reports/marin-32b-retro/">Marin 32B retrospective</a></p>
-  <p class="entry-line">Marin · 2025</p>
+  <p class="entry-desc">A roller-coaster marathon of hardware changes, loss spikes, and mid-run interventions.</p>
+  <p class="entry-line">Stanford CRFM · 2025</p>
 </div>
 
 <div class="writing-entry">
   <p><a href="https://marin.readthedocs.io/en/latest/reports/marin-8b-retro/">Marin 8B retrospective</a></p>
-  <p class="entry-line">Marin · 2025</p>
+  <p class="entry-desc">Lessons from our first serious attempt to train a competitive open model from scratch.</p>
+  <p class="entry-line">Stanford CRFM · 2025</p>
+</div>
+
+## A few papers
+
+<p class="section-note">I don't write many papers these days. These are some favorites.</p>
+
+<div class="writing-entry">
+  <p><a href="https://aclanthology.org/D08-1038/">Studying the History of Ideas Using Topic Models</a></p>
+  <p class="entry-line">Hall, Jurafsky, Manning · EMNLP · 2008</p>
+</div>
+
+<div class="writing-entry">
+  <p><a href="https://aclanthology.org/P14-1020/">Sparser, Better, Faster GPU Parsing</a></p>
+  <p class="entry-line">Hall, Berg-Kirkpatrick, Klein · ACL · 2014</p>
+</div>
+
+<div class="writing-entry">
+  <p><a href="https://aclanthology.org/P14-1022/">Less Grammar, More Features</a></p>
+  <p class="entry-line">Hall, Durrett, Klein · ACL · 2014</p>
+</div>
+
+<div class="writing-entry">
+  <p><a href="https://doi.org/10.1353/lan.2015.0005">Ancestry-Constrained Phylogenetic Analysis Supports the Indo-European Steppe Hypothesis</a></p>
+  <p class="entry-line">Chang, Cathcart, Hall, Garrett · Language · 2015</p>
+</div>
+
+<div class="writing-entry">
+  <p><a href="https://aclanthology.org/2020.tacl-1.36/">Task-Oriented Dialogue as Dataflow Synthesis</a></p>
+  <p class="entry-line">Andreas et al. · TACL · 2020</p>
 </div>
 
 <div class="writing-entry">
   <p><a href="https://arxiv.org/abs/2509.02046">Fantastic Pretraining Optimizers and Where to Find Them</a></p>
   <p class="entry-line">Wen, Hall, Ma, Liang · arXiv · 2025</p>
-</div>
-
-<div class="writing-entry">
-  <p><a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/06960915ba8674c7a898ec0b472b80ff-Abstract-Conference.html">Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training</a></p>
-  <p class="entry-line">Liu, Li, Hall, Liang, Ma · ICLR · 2024</p>
 </div>
 
 <p><a href="https://scholar.google.com/citations?user=6GpZV0YAAAAJ&amp;hl=en">More on Google Scholar →</a></p>

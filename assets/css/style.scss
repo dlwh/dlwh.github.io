@@ -42,7 +42,7 @@ body {
 
 /* Layout — narrow readable column with generous breathing room. */
 .page-container {
-  max-width: 42rem; /* 672px content column */
+  max-width: 48rem; /* 768px content column, tuned so the longest paper title stays on one line */
   margin: 0 auto;
   padding: 3.5rem 1.25rem 4rem;
 }
@@ -204,9 +204,23 @@ main hr {
   line-height: 1.5;
 }
 
+.writing-entry .entry-desc {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
 .writing-entry .entry-line {
   color: var(--text-secondary);
   font-size: 0.95rem;
+}
+
+/* Section intro note (e.g. under "A few papers") */
+.section-note {
+  margin: -0.35rem 0 1.25rem;
+  color: var(--text-secondary);
+  font-style: italic;
 }
 
 /* Footer */
