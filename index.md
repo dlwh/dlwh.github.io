@@ -24,6 +24,12 @@ I also created [Levanter](https://github.com/marin-community/marin/tree/main/lib
 ## Selected writing
 
 <div class="writing-entry">
+  <p><a href="https://openathena.ai/blog/there-is-no-posttraining-data-commons/">There Is No Post-Training Data Commons</a></p>
+  <p class="entry-desc">Why post-training needs a commons of tasks, not just documents, and what it would take to build one.</p>
+  <p class="entry-line">Open Athena · 2026</p>
+</div>
+
+<div class="writing-entry">
   <p><a href="https://openathena.ai/blog/marin-535b-launch-note/">Launching Marin 535B-A23B</a></p>
   <p class="entry-desc">Thoughts on Marin's first year at Open Athena, chikungunya, and launching Marin's largest open training run yet.</p>
   <p class="entry-line">Open Athena · 2026</p>
